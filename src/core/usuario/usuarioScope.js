@@ -1,0 +1,1 @@
+const Scope = require('../../helpers/scope');

@@ -14,7 +14,7 @@ module.exports = async (req, res, next) => {
     
     } catch (error) {
         if (error.expiredAt)
-            return res.error('Token expirado, por favor refaça o login', null, 401);
+            return res.error('Token expirado, refaça o login', null, 401);
 
         return res.error('Token inválido', null, 401);
     }

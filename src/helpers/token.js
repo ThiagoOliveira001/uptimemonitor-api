@@ -7,7 +7,7 @@ module.exports = {
 };
 
 function createToken(data) {
-    const token = jwt.sign({
+    const token = await jwt.sign({
         exp: Settings.token.exp,
         data: data
     }, Settings.token.secret);
